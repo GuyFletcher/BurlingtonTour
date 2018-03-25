@@ -9,10 +9,14 @@
 import UIKit
 
 class TourTableViewController: UITableViewController {
+    
+    var tours = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        tours.append("Lake Champlain")
+        tours.append("Champlain College")
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -27,26 +31,32 @@ class TourTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return tours.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tourID", for: indexPath)
 
-        // Configure the cell...
+        cell.textLabel?.text = tours[indexPath.row]
 
         return cell
     }
-    */
 
+    
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+ 
+        if segue.identifier == "tourSegue" {
+            if let tvc = segue.destination as? TourViewController {
+                if let row = tableView.indexPathForSelectedRow?.row {
+                    tvc.tourVideo = tours[row]
+                }
+            }
+        }
+        
+        
+     }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -82,14 +92,6 @@ class TourTableViewController: UITableViewController {
     }
     */
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

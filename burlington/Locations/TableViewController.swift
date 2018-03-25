@@ -9,7 +9,9 @@
 import UIKit
 
 class TableViewController: UITableViewController {
-
+    
+    var locations = [(name: String, image: UIImage)]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +20,13 @@ class TableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        
+        locations.append(("Champlain College", UIImage(named: "champColl")!))
+        locations.append(("UVM", UIImage(named: "uvm")!))
+        locations.append(("Lake Champlain", UIImage(named: "lake")!))
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,26 +35,39 @@ class TableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
+    /*
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 0
     }
-
+    */
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return locations.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "locationCell", for: indexPath)
 
-        // Configure the cell...
+        cell.textLabel?.text = locations[indexPath.row].name
 
         return cell
     }
-    */
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        if segue.identifier == "locationSegue" {
+            if let lvc = segue.destination as? LocationViewController {
+                if let row = tableView.indexPathForSelectedRow?.row {
+                    lvc.location = locations[row].name
+                    print(locations[row])
+                    lvc.sentImage = locations[row].image
+                }
+            }
+        }
+}
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -79,16 +101,6 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the item to be re-orderable.
         return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
     */
 
