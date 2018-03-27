@@ -8,22 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		1C2DB4092067F204003CD090 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DB4082067F204003CD090 /* AppDelegate.swift */; };
-		1C2DB40B2067F204003CD090 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DB40A2067F204003CD090 /* FirstViewController.swift */; };
-		1C2DB40D2067F204003CD090 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DB40C2067F204003CD090 /* SecondViewController.swift */; };
 		1C2DB4102067F204003CD090 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C2DB40E2067F204003CD090 /* Main.storyboard */; };
 		1C2DB4122067F204003CD090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C2DB4112067F204003CD090 /* Assets.xcassets */; };
 		1C2DB4152067F204003CD090 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C2DB4132067F204003CD090 /* LaunchScreen.storyboard */; };
+		1C2DB41F2067F3AF003CD090 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DB41E2067F3AF003CD090 /* TableViewController.swift */; };
+		1C2DB4212067F757003CD090 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DB4202067F757003CD090 /* LocationViewController.swift */; };
+		1C2DB42320680AF3003CD090 /* TourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DB42220680AF3003CD090 /* TourViewController.swift */; };
+		1C2DB42520680B09003CD090 /* TourTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DB42420680B09003CD090 /* TourTableViewController.swift */; };
+		1C2DB42A20681103003CD090 /* Lake Champlain.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1C2DB42920681103003CD090 /* Lake Champlain.mp4 */; };
+		1C2DB42C206811CA003CD090 /* Champlain College.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1C2DB42B206811CA003CD090 /* Champlain College.mp4 */; };
+		1C2DB42E206813AB003CD090 /* FavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DB42D206813AB003CD090 /* FavoriteTableViewController.swift */; };
+		1C2DB430206813C2003CD090 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DB42F206813C2003CD090 /* FavoriteViewController.swift */; };
+		1C2DB4462068230F003CD090 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DB4422068230F003CD090 /* Item.swift */; };
+		1C2DB4472068230F003CD090 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DB4432068230F003CD090 /* ItemsViewController.swift */; };
+		1C2DB4482068230F003CD090 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DB4442068230F003CD090 /* ItemStore.swift */; };
+		1C2DB4492068230F003CD090 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DB4452068230F003CD090 /* ItemCell.swift */; };
+		1C2DB44B206827A4003CD090 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DB44A206827A3003CD090 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C2DB4052067F204003CD090 /* burlington.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = burlington.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C2DB4082067F204003CD090 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1C2DB40A2067F204003CD090 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		1C2DB40C2067F204003CD090 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		1C2DB40F2067F204003CD090 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C2DB4112067F204003CD090 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C2DB4142067F204003CD090 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C2DB4162067F204003CD090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C2DB41E2067F3AF003CD090 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		1C2DB4202067F757003CD090 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		1C2DB42220680AF3003CD090 /* TourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourViewController.swift; sourceTree = "<group>"; };
+		1C2DB42420680B09003CD090 /* TourTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourTableViewController.swift; sourceTree = "<group>"; };
+		1C2DB42920681103003CD090 /* Lake Champlain.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lake Champlain.mp4"; sourceTree = "<group>"; };
+		1C2DB42B206811CA003CD090 /* Champlain College.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Champlain College.mp4"; sourceTree = "<group>"; };
+		1C2DB42D206813AB003CD090 /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
+		1C2DB42F206813C2003CD090 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		1C2DB4422068230F003CD090 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		1C2DB4432068230F003CD090 /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
+		1C2DB4442068230F003CD090 /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
+		1C2DB4452068230F003CD090 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		1C2DB44A206827A3003CD090 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +79,57 @@
 			isa = PBXGroup;
 			children = (
 				1C2DB4082067F204003CD090 /* AppDelegate.swift */,
-				1C2DB40A2067F204003CD090 /* FirstViewController.swift */,
-				1C2DB40C2067F204003CD090 /* SecondViewController.swift */,
-				1C2DB40E2067F204003CD090 /* Main.storyboard */,
+				1C2DB43D20681F8E003CD090 /* Locations */,
+				1C2DB43E20681FA1003CD090 /* Tours */,
+				1C2DB43F20681FB3003CD090 /* Favorites */,
+				1C2DB44020681FBF003CD090 /* Notes */,
 				1C2DB4112067F204003CD090 /* Assets.xcassets */,
+				1C2DB40E2067F204003CD090 /* Main.storyboard */,
 				1C2DB4132067F204003CD090 /* LaunchScreen.storyboard */,
 				1C2DB4162067F204003CD090 /* Info.plist */,
+				1C2DB42920681103003CD090 /* Lake Champlain.mp4 */,
+				1C2DB42B206811CA003CD090 /* Champlain College.mp4 */,
 			);
 			path = burlington;
+			sourceTree = "<group>";
+		};
+		1C2DB43D20681F8E003CD090 /* Locations */ = {
+			isa = PBXGroup;
+			children = (
+				1C2DB4202067F757003CD090 /* LocationViewController.swift */,
+				1C2DB41E2067F3AF003CD090 /* TableViewController.swift */,
+			);
+			path = Locations;
+			sourceTree = "<group>";
+		};
+		1C2DB43E20681FA1003CD090 /* Tours */ = {
+			isa = PBXGroup;
+			children = (
+				1C2DB42420680B09003CD090 /* TourTableViewController.swift */,
+				1C2DB42220680AF3003CD090 /* TourViewController.swift */,
+			);
+			path = Tours;
+			sourceTree = "<group>";
+		};
+		1C2DB43F20681FB3003CD090 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				1C2DB42D206813AB003CD090 /* FavoriteTableViewController.swift */,
+				1C2DB42F206813C2003CD090 /* FavoriteViewController.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		1C2DB44020681FBF003CD090 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				1C2DB4422068230F003CD090 /* Item.swift */,
+				1C2DB4452068230F003CD090 /* ItemCell.swift */,
+				1C2DB4442068230F003CD090 /* ItemStore.swift */,
+				1C2DB4432068230F003CD090 /* ItemsViewController.swift */,
+				1C2DB44A206827A3003CD090 /* DetailViewController.swift */,
+			);
+			path = Notes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +194,8 @@
 				1C2DB4152067F204003CD090 /* LaunchScreen.storyboard in Resources */,
 				1C2DB4122067F204003CD090 /* Assets.xcassets in Resources */,
 				1C2DB4102067F204003CD090 /* Main.storyboard in Resources */,
+				1C2DB42C206811CA003CD090 /* Champlain College.mp4 in Resources */,
+				1C2DB42A20681103003CD090 /* Lake Champlain.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,9 +206,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C2DB40D2067F204003CD090 /* SecondViewController.swift in Sources */,
+				1C2DB42320680AF3003CD090 /* TourViewController.swift in Sources */,
+				1C2DB42520680B09003CD090 /* TourTableViewController.swift in Sources */,
 				1C2DB4092067F204003CD090 /* AppDelegate.swift in Sources */,
-				1C2DB40B2067F204003CD090 /* FirstViewController.swift in Sources */,
+				1C2DB44B206827A4003CD090 /* DetailViewController.swift in Sources */,
+				1C2DB4492068230F003CD090 /* ItemCell.swift in Sources */,
+				1C2DB41F2067F3AF003CD090 /* TableViewController.swift in Sources */,
+				1C2DB4472068230F003CD090 /* ItemsViewController.swift in Sources */,
+				1C2DB4462068230F003CD090 /* Item.swift in Sources */,
+				1C2DB4212067F757003CD090 /* LocationViewController.swift in Sources */,
+				1C2DB430206813C2003CD090 /* FavoriteViewController.swift in Sources */,
+				1C2DB4482068230F003CD090 /* ItemStore.swift in Sources */,
+				1C2DB42E206813AB003CD090 /* FavoriteTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
