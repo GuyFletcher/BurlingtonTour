@@ -281,15 +281,8 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkk-j3-uyS">
-                                    <rect key="frame" x="8" y="15" width="175.5" height="30"/>
-                                    <state key="normal" title="Edit"/>
-                                    <connections>
-                                        <action selector="toggleEditingMode:" destination="osm-yS-EuA" eventType="touchUpInside" id="g4I-jj-yhU"/>
-                                    </connections>
-                                </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GF5-2Q-JTg">
-                                    <rect key="frame" x="191.5" y="15" width="175.5" height="30"/>
+                                    <rect key="frame" x="337" y="15" width="30" height="30"/>
                                     <state key="normal" title="Add"/>
                                     <connections>
                                         <action selector="addNewItem:" destination="osm-yS-EuA" eventType="touchUpInside" id="9gz-2Q-tES"/>
@@ -298,12 +291,8 @@
                             </subviews>
                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
-                                <constraint firstItem="GF5-2Q-JTg" firstAttribute="leading" secondItem="jkk-j3-uyS" secondAttribute="trailing" constant="8" id="Dh1-pa-J44"/>
-                                <constraint firstItem="jkk-j3-uyS" firstAttribute="centerY" secondItem="grK-A9-Dmf" secondAttribute="centerY" id="KMk-8x-0xY"/>
-                                <constraint firstItem="GF5-2Q-JTg" firstAttribute="width" secondItem="jkk-j3-uyS" secondAttribute="width" id="T0h-DC-9Cl"/>
                                 <constraint firstItem="GF5-2Q-JTg" firstAttribute="centerY" secondItem="grK-A9-Dmf" secondAttribute="centerY" id="Wfm-Ug-OC1"/>
                                 <constraint firstAttribute="trailing" secondItem="GF5-2Q-JTg" secondAttribute="trailing" constant="8" id="duA-RQ-qAH"/>
-                                <constraint firstItem="jkk-j3-uyS" firstAttribute="leading" secondItem="grK-A9-Dmf" secondAttribute="leading" constant="8" id="vt7-uX-WZo"/>
                             </constraints>
                         </view>
                         <prototypes>
