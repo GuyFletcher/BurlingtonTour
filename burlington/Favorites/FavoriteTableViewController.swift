@@ -9,7 +9,7 @@
 import UIKit
 
 class FavoriteTableViewController: UITableViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

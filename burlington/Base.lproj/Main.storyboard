@@ -176,6 +176,10 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="KOr-Do-tBq" kind="show" identifier="favTour" id="RwS-Rd-nOK"/>
+                                    <segue destination="dLm-CX-XMw" kind="show" identifier="favNote" trigger="accessoryAction" id="yVu-T1-dkc"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -551,4 +555,8 @@
         <image name="map" width="40" height="40"/>
         <image name="play" width="40" height="40"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="yVu-T1-dkc"/>
+        <segue reference="RwS-Rd-nOK"/>
+    </inferredMetricsTieBreakers>
 </document>
