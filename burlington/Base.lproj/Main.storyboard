@@ -15,7 +15,7 @@
         <scene sceneID="NTb-01-7FW">
             <objects>
                 <navigationController id="2H7-UF-fbC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Notes" id="5qb-co-tAF"/>
+                    <tabBarItem key="tabBarItem" title="Notes" image="play" id="5qb-co-tAF"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uMO-9T-aqY">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -115,7 +115,7 @@
         <scene sceneID="elE-uq-biQ">
             <objects>
                 <navigationController id="ZIW-ty-Z65" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Sights" image="first" id="CI8-uf-LqD"/>
+                    <tabBarItem key="tabBarItem" title="Sights" image="map" id="CI8-uf-LqD"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="via-e1-civ">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -189,7 +189,7 @@
             </objects>
             <point key="canvasLocation" x="1609" y="1033"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Links Table View Controller-->
         <scene sceneID="dOf-mN-1oV">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lkj-Nl-Ren" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -216,10 +216,56 @@
                             <outlet property="delegate" destination="5B3-Mc-qGj" id="n2Y-Dt-aNF"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="cv6-YH-Nny"/>
+                    <navigationItem key="navigationItem" id="cv6-YH-Nny">
+                        <nil key="title"/>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ggl-pt-s5b">
+                            <rect key="frame" x="162.5" y="7" width="50" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Credits"/>
+                            <connections>
+                                <segue destination="ayi-lW-0Dl" kind="show" id="2IP-br-DDm"/>
+                            </connections>
+                        </button>
+                    </navigationItem>
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="1708" y="1744"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xIc-zt-xU4">
+            <objects>
+                <viewController id="ayi-lW-0Dl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K0E-QX-8LR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some code taken from BigNerdRanch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsb-z9-Lek">
+                                <rect key="frame" x="43.5" y="330.5" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made by Fletcher and Jonah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M31-Jp-ONl">
+                                <rect key="frame" x="79" y="206" width="217" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="M31-Jp-ONl" firstAttribute="top" secondItem="tMI-Gj-fGC" secondAttribute="top" constant="142" id="JgN-qa-T8O"/>
+                            <constraint firstItem="hsb-z9-Lek" firstAttribute="centerX" secondItem="tMI-Gj-fGC" secondAttribute="centerX" id="RWW-bS-pTk"/>
+                            <constraint firstItem="hsb-z9-Lek" firstAttribute="centerY" secondItem="tMI-Gj-fGC" secondAttribute="centerY" id="Xkh-zo-MPT"/>
+                            <constraint firstItem="hsb-z9-Lek" firstAttribute="top" secondItem="M31-Jp-ONl" secondAttribute="bottom" constant="104" id="u1r-MK-VYz"/>
+                            <constraint firstItem="M31-Jp-ONl" firstAttribute="centerX" secondItem="tMI-Gj-fGC" secondAttribute="centerX" id="zdD-9f-z3E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tMI-Gj-fGC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RUG-Yu-CrZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1708" y="2519"/>
         </scene>
         <!--Links View Controller-->
         <scene sceneID="PeN-Ox-1NE">
@@ -230,7 +276,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E26-dq-lJw">
-                                <rect key="frame" x="34" y="48" width="307" height="515"/>
+                                <rect key="frame" x="34" y="420" width="307" height="143"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
@@ -243,6 +289,7 @@
                         <viewLayoutGuide key="safeArea" id="JXN-tI-Yab"/>
                     </view>
                     <connections>
+                        <outlet property="credits" destination="M31-Jp-ONl" id="ZBh-qG-b9y"/>
                         <outlet property="webView" destination="E26-dq-lJw" id="Lsv-6k-cyR"/>
                     </connections>
                 </viewController>
@@ -254,7 +301,7 @@
         <scene sceneID="ceL-Xj-XvC">
             <objects>
                 <navigationController id="XPz-Kn-qc0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Links" id="tMX-JT-ru7"/>
+                    <tabBarItem key="tabBarItem" title="Links" image="links" id="tMX-JT-ru7"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tw0-rD-Zrz">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -271,7 +318,7 @@
         <scene sceneID="Ytq-ZG-sIv">
             <objects>
                 <navigationController id="u3B-kg-nfP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Favorites" id="x6Z-aa-Qn8"/>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="first" id="x6Z-aa-Qn8"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eUo-E5-VyS">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -313,7 +360,7 @@
         <scene sceneID="Smf-Ej-j9r">
             <objects>
                 <navigationController id="Z0o-aZ-EiV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Audio" image="second" id="qqu-wS-LPF"/>
+                    <tabBarItem key="tabBarItem" title="Audio" image="play" id="qqu-wS-LPF"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BGA-PL-8GY">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -500,6 +547,8 @@
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="links" width="40" height="40"/>
+        <image name="map" width="40" height="40"/>
+        <image name="play" width="40" height="40"/>
     </resources>
 </document>

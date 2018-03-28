@@ -12,6 +12,7 @@ import WebKit
 class LinksViewController: UIViewController, WKUIDelegate {
     @IBOutlet var webView: WKWebView!
     
+    
     var url: String = ""
     
     override func loadView() {
@@ -19,14 +20,16 @@ class LinksViewController: UIViewController, WKUIDelegate {
         webView = WKWebView(frame: .zero, configuration: webConfiguration)
         webView.uiDelegate = self
         view = webView
+
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+ 
         let myURL = URL(string: url)
         let myRequest = URLRequest(url: myURL!)
         webView.load(myRequest)
+
     }
 
     override func didReceiveMemoryWarning() {
