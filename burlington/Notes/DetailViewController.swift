@@ -19,6 +19,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
         super.viewWillAppear(animated)
         
         nameField.text = item.name
+        imageFromUser.image = item.photoView
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -29,6 +30,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
         
         // "Save" changes to item
         item.name = nameField.text ?? ""
+        
     }
     
     @IBAction func backgroundTapped(_ sender: UITapGestureRecognizer) {
@@ -59,6 +61,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
         
         // Put that image onto the screen in our image view
         imageFromUser.image = image
+        item.photoView = imageFromUser.image!
         
         // Take image picker off the screen -
         // you must call this dismiss method

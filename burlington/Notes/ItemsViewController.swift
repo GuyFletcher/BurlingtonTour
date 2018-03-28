@@ -113,6 +113,7 @@ class ItemsViewController: UITableViewController {
         let item = itemStore.allItems[indexPath.row]
         
         cell.nameLabel.text = item.name
+        cell.photoView.image = item.photoView
         
         return cell
     }
