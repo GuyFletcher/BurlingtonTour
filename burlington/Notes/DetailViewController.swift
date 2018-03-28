@@ -15,21 +15,6 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
         }
     }
     
-    let numberFormatter: NumberFormatter = {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .currency
-        formatter.minimumFractionDigits = 2
-        formatter.maximumFractionDigits = 2
-        return formatter
-    }()
-    
-    let dateFormatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .medium
-        formatter.timeStyle = .none
-        return formatter
-    }()
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         

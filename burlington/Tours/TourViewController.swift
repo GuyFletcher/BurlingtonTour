@@ -17,10 +17,23 @@ protocol FavoriteViewControllerDelegate {
 class TourViewController: UIViewController {
     
     var tourVideo: String = ""
+    var type: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if type == "wav" {
+            playAudio()
+        }
+        else {
+            playVideo()
+        }
+        
+        
+    }
+    
+    func playVideo()
+    {
         guard let path = Bundle.main.path(forResource: tourVideo, ofType:"mp4") else {
             debugPrint("Video not found")
             return
@@ -31,8 +44,20 @@ class TourViewController: UIViewController {
         present(playerController, animated: true) {
             player.play()
         }
-        
-        // Do any additional setup after loading the view.
+    }
+    
+    func playAudio()
+    {
+        guard let path = Bundle.main.path(forResource: tourVideo, ofType:"wav") else {
+            debugPrint("Video not found")
+            return
+        }
+        let player = AVPlayer(url: URL(fileURLWithPath: path))
+        let playerController = AVPlayerViewController()
+        playerController.player = player
+        present(playerController, animated: true) {
+            player.play()
+        }
     }
 
     override func didReceiveMemoryWarning() {

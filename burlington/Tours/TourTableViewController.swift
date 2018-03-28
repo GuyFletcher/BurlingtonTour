@@ -10,13 +10,13 @@ import UIKit
 
 class TourTableViewController: UITableViewController {
     
-    var tours = [String]()
+    var tours = [(String,String)]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tours.append("Lake Champlain")
-        tours.append("Champlain College")
+        tours.append(("Lake Champlain", "wav"))
+        tours.append(("Champlain College", "mp4"))
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -39,7 +39,7 @@ class TourTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tourID", for: indexPath)
 
-        cell.textLabel?.text = tours[indexPath.row]
+        cell.textLabel?.text = tours[indexPath.row].0
 
         return cell
     }
@@ -50,7 +50,8 @@ class TourTableViewController: UITableViewController {
         if segue.identifier == "tourSegue" {
             if let tvc = segue.destination as? TourViewController {
                 if let row = tableView.indexPathForSelectedRow?.row {
-                    tvc.tourVideo = tours[row]
+                    tvc.tourVideo = tours[row].0
+                    tvc.type = tours[row].1
                 }
             }
         }

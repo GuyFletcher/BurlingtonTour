@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C1FB423206C2034003E0825 /* Lake Champlain.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1C1FB422206C2034003E0825 /* Lake Champlain.wav */; };
 		1C2DB4092067F204003CD090 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DB4082067F204003CD090 /* AppDelegate.swift */; };
 		1C2DB4102067F204003CD090 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C2DB40E2067F204003CD090 /* Main.storyboard */; };
 		1C2DB4122067F204003CD090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C2DB4112067F204003CD090 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C1FB422206C2034003E0825 /* Lake Champlain.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Lake Champlain.wav"; sourceTree = "<group>"; };
 		1C2DB4052067F204003CD090 /* burlington.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = burlington.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C2DB4082067F204003CD090 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C2DB40F2067F204003CD090 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				1C2DB40E2067F204003CD090 /* Main.storyboard */,
 				1C2DB4132067F204003CD090 /* LaunchScreen.storyboard */,
 				1C2DB4162067F204003CD090 /* Info.plist */,
+				1C1FB422206C2034003E0825 /* Lake Champlain.wav */,
 				1C2DB42920681103003CD090 /* Lake Champlain.mp4 */,
 				1C2DB42B206811CA003CD090 /* Champlain College.mp4 */,
 			);
@@ -191,6 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C1FB423206C2034003E0825 /* Lake Champlain.wav in Resources */,
 				1C2DB4152067F204003CD090 /* LaunchScreen.storyboard in Resources */,
 				1C2DB4122067F204003CD090 /* Assets.xcassets in Resources */,
 				1C2DB4102067F204003CD090 /* Main.storyboard in Resources */,
