@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1C1FB423206C2034003E0825 /* Lake Champlain.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1C1FB422206C2034003E0825 /* Lake Champlain.wav */; };
+		1C1FB427206C2BD3003E0825 /* LinksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1FB426206C2BD3003E0825 /* LinksTableViewController.swift */; };
+		1C1FB429206C2CE8003E0825 /* LinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1FB428206C2CE8003E0825 /* LinksViewController.swift */; };
 		1C2DB4092067F204003CD090 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2DB4082067F204003CD090 /* AppDelegate.swift */; };
 		1C2DB4102067F204003CD090 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C2DB40E2067F204003CD090 /* Main.storyboard */; };
 		1C2DB4122067F204003CD090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C2DB4112067F204003CD090 /* Assets.xcassets */; };
@@ -29,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		1C1FB422206C2034003E0825 /* Lake Champlain.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Lake Champlain.wav"; sourceTree = "<group>"; };
+		1C1FB426206C2BD3003E0825 /* LinksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksTableViewController.swift; sourceTree = "<group>"; };
+		1C1FB428206C2CE8003E0825 /* LinksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksViewController.swift; sourceTree = "<group>"; };
 		1C2DB4052067F204003CD090 /* burlington.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = burlington.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C2DB4082067F204003CD090 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C2DB40F2067F204003CD090 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,6 +65,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C1FB425206C2B9E003E0825 /* Links */ = {
+			isa = PBXGroup;
+			children = (
+				1C1FB426206C2BD3003E0825 /* LinksTableViewController.swift */,
+				1C1FB428206C2CE8003E0825 /* LinksViewController.swift */,
+			);
+			path = Links;
+			sourceTree = "<group>";
+		};
 		1C2DB3FC2067F204003CD090 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +102,7 @@
 				1C2DB40E2067F204003CD090 /* Main.storyboard */,
 				1C2DB4132067F204003CD090 /* LaunchScreen.storyboard */,
 				1C2DB4162067F204003CD090 /* Info.plist */,
+				1C1FB425206C2B9E003E0825 /* Links */,
 				1C1FB422206C2034003E0825 /* Lake Champlain.wav */,
 				1C2DB42920681103003CD090 /* Lake Champlain.mp4 */,
 				1C2DB42B206811CA003CD090 /* Champlain College.mp4 */,
@@ -218,9 +232,11 @@
 				1C2DB41F2067F3AF003CD090 /* TableViewController.swift in Sources */,
 				1C2DB4472068230F003CD090 /* ItemsViewController.swift in Sources */,
 				1C2DB4462068230F003CD090 /* Item.swift in Sources */,
+				1C1FB427206C2BD3003E0825 /* LinksTableViewController.swift in Sources */,
 				1C2DB4212067F757003CD090 /* LocationViewController.swift in Sources */,
 				1C2DB430206813C2003CD090 /* FavoriteViewController.swift in Sources */,
 				1C2DB4482068230F003CD090 /* ItemStore.swift in Sources */,
+				1C1FB429206C2CE8003E0825 /* LinksViewController.swift in Sources */,
 				1C2DB42E206813AB003CD090 /* FavoriteTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
