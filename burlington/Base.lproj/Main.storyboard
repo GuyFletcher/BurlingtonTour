@@ -82,9 +82,9 @@
                                     <constraint firstAttribute="height" constant="300" id="m49-lo-ga9"/>
                                 </constraints>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9N-aX-xdq">
-                                <rect key="frame" x="160" y="569" width="55" height="30"/>
-                                <state key="normal" title="Favorite"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9N-aX-xdq">
+                                <rect key="frame" x="170" y="564" width="35" height="35"/>
+                                <state key="normal" image="star-outline"/>
                                 <connections>
                                     <action selector="Favorite:" destination="iQB-PC-eb2" eventType="touchUpInside" id="xIi-sz-BFJ"/>
                                 </connections>
@@ -109,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hy6-qX-f45" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2426" y="-349"/>
+            <point key="canvasLocation" x="2424.8000000000002" y="-349.47526236881561"/>
         </scene>
         <!--Sights-->
         <scene sceneID="elE-uq-biQ">
@@ -196,7 +196,6 @@
         <!--Links Table View Controller-->
         <scene sceneID="dOf-mN-1oV">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lkj-Nl-Ren" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="5B3-Mc-qGj" customClass="LinksTableViewController" customModule="burlington" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="L8x-tC-ekx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -232,6 +231,7 @@
                         </button>
                     </navigationItem>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lkj-Nl-Ren" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1708" y="1744"/>
         </scene>
@@ -554,6 +554,7 @@
         <image name="links" width="40" height="40"/>
         <image name="map" width="40" height="40"/>
         <image name="play" width="40" height="40"/>
+        <image name="star-outline" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="yVu-T1-dkc"/>

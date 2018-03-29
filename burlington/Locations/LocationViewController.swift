@@ -84,10 +84,14 @@ class LocationViewController: UIViewController{
         mapItem.openInMaps(launchOptions: options)
     }
     
-    @IBAction func Favorite(_ sender: Any) {
+    @IBAction func FavButton(_ sender: UIButton) {
+        let fav = Favorite(segue: location, note: "", image: sentImage)
         
-       favorite = !favorite
+        let userDefaults = UserDefaults.standard
+        let encodedData: Data = NSKeyedArchiver.archivedData(withRootObject: fav)
         
+        userDefaults.set(encodedData, forKey: location)
+        userDefaults.synchronize()
     }
     
     /*
